@@ -1,0 +1,61 @@
+* {
+    font-family: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(loki.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color: #ffffffda;
+    font-family: 'Indie flower', cursive;
+    display: grid;
+    place-content: center;
+}   
+
+.loki{
+    font-size: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(60%, 80%);
+}
+
+.loki .letter {
+    text-shadow: 0 0 0.4em #ffffffda, 0 0 0.25em #ffffffda;
+    margin-left: 2rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    body, html{
+        height: 100%;
+    }
+    
+    body{
+        background: url(loki2.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container{
+        margin: 0;
+    }
+
+    .loki {
+        transform: none;
+        font-size: 6rem;
+    }
+}
